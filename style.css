@@ -2,7 +2,7 @@
 
 :root{
     --white: #f9f9f9;
-    --black: #36383F;
+    --black:  #448588;
     --gray: #85888C;
 } /* variables*/
 
@@ -48,7 +48,7 @@ ul{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: var(--black);
+    background-color:   #448588;
     overflow: hidden;
 
 }
@@ -116,6 +116,10 @@ ul{
 .side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top:0;
+}
+
+#navlogo {
+    width: 20%;
 }
 
 /* Hero image */
