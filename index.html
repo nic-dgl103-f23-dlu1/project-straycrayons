@@ -1,42 +1,108 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ascent Physiotherpay</title>
-        <meta name="description" content="Final project for DGL 103. Rework of Ascent Physiotherapy">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <!-- DGL 103 CVS1 - Kaitlyn Charleson - Final Project -->
-    </head>
-    <body>
-         <!-- Navigation bar -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ascent Physiotherpay</title>
+    <meta
+      name="description"
+      content="Final project for DGL 103. Rework of Ascent Physiotherapy"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- DGL 103 CVS1 - Kaitlyn Charleson - Final Project -->
+  </head>
+  <body>
+    <!-- Navigation bar -->
     <header class="header">
-        <!-- Logo -->
-        <a href="#" class="logo"><img id="navlogo" src="images/Ascent_Logo.png" alt="Ascent physiotherpay logo"></a>
-        <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-        <!-- Menu -->
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">services</a> </li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+      <!-- Logo -->
+      <a href="#" class="logo"
+        ><img
+          id="navlogo"
+          src="images/Ascent_Logo.png"
+          alt="Ascent physiotherpay logo"
+      /></a>
+      <!-- Hamburger icon -->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
+      <!-- Menu -->
+      <nav class="nav">
+        <ul class="menu">
+          <li>
+            <img src="images/Ascent_Logo.png" alt="ascent ohysiotherapy logo" />
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><p>250-339-1039</p></li>
+          <li><a href=".calltoaction">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
-
-        <section class="hero">
-            <img src="images/group.jpg" alt="Team members at Ascent Physiotherapy">
-        </section>
-        <section class="about"></section>
-        <section class="services"></section>
-        <section class="calltoacion"></section>
-        <section class="location"></section>
-        <footer></footer>
-       
-    </body>
+    <section class="hero">
+      <img src="images/group.jpg" alt="Team members at Ascent Physiotherapy" />
+    </section>
+    <section class="about">
+      <h2>Ascent Physiotherapy</h2>
+      <p>
+        Ascent Physiotherapy is a full service physiotherapy clinic located in
+        Comox, BC.  We offer Physiotherapy, including Manual/Manipulative
+        Therapy, IMS, Acupuncture, Radial Shockwave Therapy and exercise
+        prescription including Personal Training to the residents of the Comox
+        Valley and surrounding area.
+      </p>
+    </section>
+    <section class="services">
+        <h3>Services</h3>
+        <p>Our specialties:</p>
+        <ul>
+            <li>physical therapy</li>
+            <li>Intramuscular Stimulation</li>
+            <li>Acupuncture</li>
+            <li>radial shockwave therapy</li>
+            <li>personal training</li>
+            <li>tmj dysfunction</li>
+            <li>myofacial release and craniosacral therapy</li>
+            <li>sports therapy</li>
+        </ul>
+        <a href="services.html">more about services</a>
+    </section>
+    <section class="calltoacion">
+        <h3>make an appointment</h3>
+        <form action="submit_form.php" method="post">
+            <!-- Contact Name -->
+            <label for="contactName">Contact Name:</label>
+            <input type="text" id="contactName" name="contactName" required>
+    
+            <br>
+    
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <br>
+    
+            <!-- Phone Number -->
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    
+            <br>
+    
+            <!-- Desired Appointment Date -->
+            <label for="appointmentDate">Desired Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+    
+            <br><br>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="We'll be in contact soon!">
+        </form>
+    </section>
+    <section class="location"></section>
+    <footer></footer>
+  </body>
 </html>
