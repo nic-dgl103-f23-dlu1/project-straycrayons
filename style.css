@@ -6,11 +6,9 @@
          url('Fonts/oregon\ ldo.ttf') format('woff2'),
          url('Fonts/oregon\ ldo.ttf') format('woff'),
          url('Fonts/oregon\ ldo.ttf') format('truetype');
-  }
-
+}
 
 /* google map css */
-
 .google-map {
     padding-bottom: 50%;
     position: relative;
@@ -24,166 +22,357 @@
     position: absolute;
 }
 
+/* ###########Mobile########### */
+@media screen and (max-width: 1199px) {
 
-/* ###########Mobile Only########### */
-@media screen and (max-width: 1199px){
-
-/* Reset some default styles for better consistency across browsers */
-body, h1, h2, h3, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Apply a background color and some basic styling to the body */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #25283D;
-    color: #fff6df;
-    line-height: 1.6;
-}
-
-/* Style the header section (navigation bar) */
-.header {
-    background-color: #25283D;
-    color: #fff6df;
-    padding: 10px;
-    text-align: center;
-}
-
-.menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu img {
-    height: 100px; /* adjust the height as needed */
-}
-
-/* Style the mobile menu */
-.menu-icon {
-    display: none; /* initially hide the menu icon */
-    cursor: pointer;
-}
-
-.menu a {
-    color: #fff6df;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-
-/* Style the hero section */
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
-/* Style the about section */
-.about {
-    padding: 40px;
-    text-align: center;
-}
-
-.about h2 {
-    font-family: "LDO";
-    font-size: 32px;
-}
-
-/* Style the services section */
-.services {
-    background-color: #fbf9f5;
-    padding: 40px;
-    text-align: center;
-    color: #25283D;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.services h3 {
-    color: #25283D;
-    font-family: "LDO";
-}
-
-.services ul {
-    list-style-type: none;
-    color: #25283D;
-    text-transform: capitalize;
-}
-
-.services a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #25283D;
-    font-weight: bold;
-}
-
-/* Style the call to action section */
-.calltoacion {
-    background-color: #25283D;
-    color: #fff6df;
-    padding: 40px;
-    text-align: center;
-    text-transform: capitalize;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-#submitform {
-    display: inline-block;
-    outline: 0;
-    cursor: pointer;
-    border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 7px;
-    font-weight: 400;
-    font-size: 16px;
-    background: #fff;
-    color: #696969;
-    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-    :hover{
-        background: rgba(255,255,255,0.9);
-        box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+    /* Reset some default styles*/
+    body, h1, h2, h3, p, ul {
+        margin: 0;
+        padding: 0;
     }
-    
+
+    /* Apply a background color and some basic styling to the body */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #25283D;
+        color: #fff6df;
+        line-height: 1.6;
+    }
+
+    /* Style the header section (navigation bar) */
+    .header {
+        background-color: #25283D;
+        color: #fff6df;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu img {
+        height: 100px;
+    }
+
+    /* Style the mobile menu */
+    .menu-icon {
+        display: none;
+
+    }
+
+    .menu a {
+        color: #fff6df;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+
+    /* Style the hero section */
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* boxes found on https://copy-paste-css.com/ */ 
+    }
+
+    /* About section */
+    .about {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-family: "LDO"; /* imported custom font to match the current logo*/
+        font-size: 32px;
+    }
+
+    /* Services section */
+    .services {
+        background-color: #fbf9f5;
+        padding: 40px;
+        text-align: center;
+        color: #25283D;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  /* boxes found on https://copy-paste-css.com/ */
+    }
+
+    .services img {
+        display: none;
+    }
+
+    .services h3 {
+        color: #25283D;
+        font-family: "LDO";
+    }
+
+    .services ul {
+        list-style-type: none;
+        color: #25283D;
+        text-transform: capitalize;
+    }
+
+    .services a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #25283D;
+        font-weight: bold;
+    }
+
+    #serviceslink {
+        font-family: "LDO";
+        display: inline-block;
+        outline: 0;
+        cursor: pointer;
+        border: none;
+        padding: 0 56px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 7px;
+        font-weight: 400;
+        font-size: 16px;
+        background: #25283D;
+        color: #fff6df;
+        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+        :hover {
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+        }
+    } /* button found on https://copy-paste-css.com/ altered color and font family*/
+
+    /* call to action section */
+    .calltoacion {
+        background-color: #25283D;
+        color: #fff6df;
+        padding: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* boxes found on https://copy-paste-css.com/ */
+    }
+
+    #submitform {
+        font-family: "LDO";
+        display: inline-block;
+        outline: 0;
+        cursor: pointer;
+        border: none;
+        padding: 0 56px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 7px;
+        font-weight: 400;
+        font-size: 16px;
+        background: #fff;
+        color: #25283D;
+        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+        :hover {
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+        }
+    } /* boxes found on https://copy-paste-css.com/ */
+
+    .calltoacion form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .calltoacion label {
+        display: inline-block;
+    }
+
+    /* ###########END of Mobile########### */
 }
 
-.calltoacion form {
-    max-width: 400px;
-    margin: 0 auto;
-}
+/* ###########Desktop Only########### */
+@media screen and (min-width: 1200px) {
 
-.calltoacion label {
-    displa
-
-
-}/* ###########END of Small Only########### */
-
-/* ########## desktop ############ */
-@media screen and (min-width: 1200px){
+    /* Global */
+    body, h1, h2, h3, p, ul {
+        margin: 0;
+        padding: 0;
+    }
 
     
-/* Navbar */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #25283D;
+        color: #fff6df;
+        line-height: 1.6;
+    }
 
-/* Hero image */
+    /* Header section (navigation bar) */
+    .header {
+        background-color: #25283D;
+        color: #fff6df;
+        padding: 10px;
+        text-align: center;
+    }
 
-/* About Section */
+    .menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Services Section */
+    .menu li {
+        margin-right: 20px;
+    }
 
-/* Call to Action Section */
+    .menu img {
+        height: 100px;
+    }
 
-/* Location Section */
+    .menu a {
+        color: #fff6df;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
 
-/* Footer Section */
+    /* Hero section */
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    /* About section */
+    .about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-family: "LDO";
+        font-size: 32px;
+    }
+
+    /* Services section */
+    .services {
+        display: flex;
+        align-items: center;
+        background-color: #fbf9f5;
+        padding: 40px;
+        color: #25283D;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        text-align: center;
+    }
+
+    #servicecontainer {
+        align-items: flex-end;
+        padding-left: 20%;
+    }
+
+    .services h3 {
+        color: #25283D;
+        font-family: "LDO";
+        margin-bottom: 15px;
+    }
+
+    .services ul {
+        list-style-type: none;
+        color: #25283D;
+        text-transform: capitalize;
+        padding-left: 0;
+        margin-bottom: 15px; 
+    }
+
+    .services li {
+        margin-bottom: 10px;
+    }
+
+    .services a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #25283D;
+        font-weight: bold;
+        display: block; 
+        padding: 15px 0;
+    }
+
+    .services img {
+        max-width: 40%;
+        margin-left: 20px; 
+        border-radius: 8px;
+    }
+
+    #serviceslink {
+        font-family: "LDO";
+        display: inline-block;
+        outline: 0;
+        cursor: pointer;
+        border: none;
+        padding: 15px 56px;
+        height: auto;
+        border-radius: 7px;
+        font-weight: 400;
+        font-size: 16px;
+        background: #25283D;
+        color: #fff6df;
+        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+        :hover {
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+        }
+    }
 
 
-}/* ########## End of Desktop ############ */
+    /* call to action section */
+    .calltoacion {
+        display: flex;
+        justify-content: space-around;
+        background-color: #25283D;
+        color: #fff6df;
+        padding: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
 
+    #submitform {
+        font-family: "LDO";
+        display: inline-block;
+        outline: 0;
+        cursor: pointer;
+        border: none;
+        padding: 0 56px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 7px;
+        font-weight: 400;
+        font-size: 16px;
+        background: #fff;
+        color: #25283D;
+        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+        :hover {
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+        }
+    }
+
+    .calltoacion form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .calltoacion label {
+        display: inline-block;
+    }
+
+    /* Add additional desktop styles here */
+
+    /* ###########END of Desktop Only########### */
+}
