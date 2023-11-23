@@ -47,55 +47,62 @@
       </p>
     </section>
     <section class="services">
-       <img src="images/servicehomeimg.jpg" alt="image of acupuncture">
-       <div id="servicecontainer">
-       <h3>Services</h3>
-      <ul>
-        <li>physical therapy</li>
-        <li>Intramuscular Stimulation</li>
-        <li>Acupuncture</li>
-        <li>radial shockwave therapy</li>
-        <li>personal training</li>
-        <li>tmj dysfunction</li>
-        <li>myofacial release and craniosacral therapy</li>
-        <li>sports therapy</li>
-      </ul>
-      <a id="serviceslink" href="services.html">more about services</a>
-    </div></section>
+      <img src="images/servicehomeimg.jpg" alt="image of acupuncture" />
+      <div id="servicecontainer">
+        <h3>Services</h3>
+        <ul>
+          <li>physical therapy</li>
+          <li>Intramuscular Stimulation</li>
+          <li>Acupuncture</li>
+          <li>radial shockwave therapy</li>
+          <li>personal training</li>
+          <li>tmj dysfunction</li>
+          <li>myofacial release and craniosacral therapy</li>
+          <li>sports therapy</li>
+        </ul>
+        <a id="serviceslink" href="services.html">more about services</a>
+      </div>
+    </section>
     <section class="calltoacion">
       <h3>make an appointment</h3>
       <form action="submit_form.php" method="post">
-        <!-- Contact Name -->
-        <label for="contactName">Contact Name:</label>
-        <input type="text" id="contactName" name="contactName" required />
+        <div class="form-box">
+          <!-- Contact Name -->
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="contactName" required />
 
-        <br />
+          <br />
 
-        <!-- Email -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-        <br />
+          <br />
+        </div>
+        <div class="form-box">
+          <!-- Phone Number -->
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
 
-        <!-- Phone Number -->
-        <label for="phoneNumber">Phone Number:</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" required />
+          <br />
 
-        <br />
-
-        <!-- Desired Appointment Date -->
-        <label for="appointmentDate">Desired Appointment Date:</label>
-        <input
-          type="date"
-          id="appointmentDate"
-          name="appointmentDate"
-          required
-        />
-
+          <!-- Desired Appointment Date -->
+          <label for="appointmentDate">Desired Appointment Date</label>
+          <input
+            type="date"
+            id="appointmentDate"
+            name="appointmentDate"
+            required
+          />
+        
         <br /><br />
-
+</div>
         <!-- Submit Button -->
-        <input id="submitform" type="submit" value="We'll be in contact soon!" />
+        <input
+          id="submitform"
+          type="submit"
+          value="We'll be in contact soon!"
+        />
       </form>
     </section>
     <section class="location">

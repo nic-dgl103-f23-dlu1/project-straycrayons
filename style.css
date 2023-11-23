@@ -39,7 +39,7 @@
         line-height: 1.6;
     }
 
-    /* Style the header section (navigation bar) */
+    /* Header section (navigation bar) */
     .header {
         background-color: #25283D;
         color: #fff6df;
@@ -62,7 +62,7 @@
         height: 100px;
     }
 
-    /* Style the mobile menu */
+    /* Mobile menu */
     .menu-icon {
         display: none;
 
@@ -74,7 +74,7 @@
         text-decoration: none;
     }
 
-    /* Style the hero section */
+    /* Hero section */
     .hero img {
         width: 100%;
         height: auto;
@@ -90,7 +90,7 @@
 
     .about h2 {
         font-family: "LDO"; /* imported custom font to match the current logo*/
-        font-size: 32px;
+        font-size: 36px;
     }
 
     /* Services section */
@@ -148,12 +148,46 @@
 
     /* call to action section */
     .calltoacion {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
         background-color: #25283D;
         color: #fff6df;
         padding: 40px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         text-align: center;
         text-transform: capitalize;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* boxes found on https://copy-paste-css.com/ */
+    }
+
+    .calltoacion h3 {
+        color: #fff6df;
+        font-family: "LDO";
+        font-size: 24px;
+        margin-bottom: 20px; 
+    }
+
+    .calltoacion form {
+        max-width: 400px;
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .calltoacion label {
+        display: block; 
+        color: #fff6df;
+        font-family: "LDO";
+        margin-bottom: 8px; 
+    }
+
+    .calltoacion input {
+        width: 100%; 
+        padding: 10px; 
+        margin-bottom: 15px; 
+        box-sizing: border-box; 
+        border: 1px solid #fff6df; 
+        border-radius: 5px; 
+        background-color: transparent; 
+        color: #fff6df;
     }
 
     #submitform {
@@ -162,9 +196,8 @@
         outline: 0;
         cursor: pointer;
         border: none;
-        padding: 0 56px;
-        height: 45px;
-        line-height: 45px;
+        padding: 15px 56px; 
+        height: auto;
         border-radius: 7px;
         font-weight: 400;
         font-size: 16px;
@@ -176,16 +209,8 @@
             background: rgba(255,255,255,0.9);
             box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
         }
-    } /* boxes found on https://copy-paste-css.com/ */
-
-    .calltoacion form {
-        max-width: 400px;
-        margin: 0 auto;
     }
 
-    .calltoacion label {
-        display: inline-block;
-    }
 
     /* ###########END of Mobile########### */
 }
@@ -328,17 +353,47 @@
         }
     }
 
-
-    /* call to action section */
     .calltoacion {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column; 
+        align-items: center;
         background-color: #25283D;
         color: #fff6df;
         padding: 40px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         text-align: center;
         text-transform: capitalize;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .calltoacion h3 {
+        color: #fff6df;
+        font-family: "LDO";
+        font-size: 24px;
+        margin-bottom: 20px; 
+    }
+
+    .calltoacion form {
+        max-width: 400px;
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+    .calltoacion label {
+        display: block; 
+        color: #fff6df;
+        font-family: "LDO";
+        margin-bottom: 8px; 
+    }
+
+    .calltoacion input {
+        width: 100%; 
+        padding: 10px; 
+        margin-bottom: 15px; 
+        box-sizing: border-box; 
+        border: 1px solid #fff6df; 
+        border-radius: 5px; 
+        background-color: white; 
+        color: #fff6df;
     }
 
     #submitform {
@@ -347,9 +402,8 @@
         outline: 0;
         cursor: pointer;
         border: none;
-        padding: 0 56px;
-        height: 45px;
-        line-height: 45px;
+        padding: 15px 56px; 
+        height: auto;
         border-radius: 7px;
         font-weight: 400;
         font-size: 16px;
@@ -363,16 +417,6 @@
         }
     }
 
-    .calltoacion form {
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .calltoacion label {
-        display: inline-block;
-    }
-
-    /* Add additional desktop styles here */
 
     /* ###########END of Desktop Only########### */
 }
