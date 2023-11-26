@@ -312,9 +312,9 @@
     .services {
         display: flex;
         align-items: center;
-        background-color: #fbf9f5;
+        background-color:#25283D ;
         padding: 40px;
-        color: #25283D;
+        color: #fbf9f5;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         text-align: center;
     }
@@ -527,7 +527,7 @@
       .wordsalad {
         margin: 50px auto;
         padding: 20px;
-        background-color: #fbf9f5;
+        background-color: #25283D;
         box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
     }
 
@@ -537,6 +537,10 @@
         margin: 0;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .word-list li {
+        color: #fbf9f5;
     }
 
     .largerli {
