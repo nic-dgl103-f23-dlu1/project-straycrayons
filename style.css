@@ -568,14 +568,37 @@
     /*  services description section*/
 
 .contd {
-    background-color: #fbf9f5; /* Off white background color */
-    color: #25283D; /* Dark blue text color */
+    background-color: #25283D;
+    color: #fbf9f5; 
     padding: 40px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
 }
 
+.contd h3 {
+    font-family: "LDO";
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
 
+.contd-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fbf9f5; /* Off white background color */
+}
+
+.contd-article img {
+    max-width: 20%;
+    margin-right: 20px;
+}
+
+.contd-text {
+    color: #25283D;
+    flex: 1;
+}
 
     /* ###########END of Desktop Only########### */
 }
