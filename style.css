@@ -217,9 +217,20 @@
         display: none;
     }
 
-    
+    /*  services description section universal*/
 
-    
+.contd {
+    background-color: #fbf9f5; /* Off white background color */
+    color: #25283D; /* Dark blue text color */
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+}
+
+.contd img {
+    display: none;
+}
+
     /* ###########END of Mobile########### */
 }
 
@@ -506,10 +517,6 @@
     }
 }
 
-
-
-
-
 .servicepage h2 {
  
     color: #25283D;
@@ -556,6 +563,19 @@
         font-size: 2rem;
         padding: 5px;
     }
+
+
+    /*  services description section*/
+
+.contd {
+    background-color: #fbf9f5; /* Off white background color */
+    color: #25283D; /* Dark blue text color */
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+}
+
+
 
     /* ###########END of Desktop Only########### */
 }
