@@ -7,15 +7,176 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="style.css">
         <!-- DGL 103 CVS1 - Kaitlyn Charleson - Final Project -->
     </head>
     <body>
-       <header><nav></nav></header>
-       <section class="hero"></section>
-       <section class="services"></section>
-       <section class="contd"></section>
-       <section class="calltoacion"></section>
-       <footer></footer>
+        <header class="header">
+            <!-- Menu -->
+            <nav class="nav">
+              <ul class="menu">
+                <li>
+                  <img src="images/Ascent_Logo.png" alt="ascent physiotherapy logo" />
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href=".calltoaction">Contact Us</a></li>
+                <li><p>250-339-1039</p></li>
+              </ul>
+            </nav>
+          </header>
+
+       <section class="hero">
+        <h1>Ascent Physiotherapy Services</h1>
+        <p>
+          Ascent Physiotherapy is a full service physiotherapy clinic. We offer a wide range of services to meet individual needs and take pride in making customized plans for everyone.
+        </p>
+
+       </section>
+<section class="servicepage">
+<h2>We offer:</h2>
+<div class="wordsalad">
+<ul class="word-list">
+    <li>Physical Therapy </li>
+<li class="largerli">
+Manual and Manipulative Therapy    
+</li>
+<li>
+Intramuscular Stimulation (IMS)
+</li>
+<li class="largerli">
+Acupuncture
+</li>
+<li>
+Radial Shockwave Therapy
+</li>
+<li id="largestli">
+Personal Training
+<li>
+<li class="smallerli">
+Worksafe BC
+</li>
+<li>
+ICBC
+</li>
+<li id="uniqueli">
+Treatment for TMJ Dysfunction
+</li>
+<li id="anotheruniqueli">
+Myofascial Release and Craniosacral Therapy
+</li>
+<li class="smallerli">
+Sports Therapy
+</li>
+<li class="largerli">
+Athletic Taping/ Bracing
+<li>
+</ul>
+</div>
+<p>What are all these words? See below for a description!</p>
+</section>
+       <section class="contd">
+        <h3>Specialties</h3>
+
+        <article>
+        <h4>Physical Therapy</h4>
+        <p>Experience personalized rehabilitation programs designed to restore mobility,
+             alleviate pain, and enhance overall function, guided by our expert physical 
+             therapists.</p></article>
+
+             <article>
+        <h4>Intramuscular Stimulation (IMS)</h4>
+        <p>Discover relief from chronic muscle pain through IMS, a precise technique 
+            targeting trigger points to release tension and promote healing.</p></article>
+
+            <article>
+        <h4>Acupuncture</h4>
+        <p>Harness the power of ancient healing with acupuncture, a holistic approach
+             that stimulates key points in the body to reduce pain, improve circulation,
+              and enhance well-being.</p>
+            </article>
+
+            <article>
+        <h4>Radial Shockwave Therapy</h4>
+        <p>Accelerate healing and tissue repair with radial shockwave therapy,
+             a non-invasive treatment that promotes regeneration and alleviates
+              musculoskeletal discomfort.</p>
+            </article>
+
+            <article>
+        <h4>Personal Training</h4>
+        <p>Elevate your fitness journey with personalized training programs, tailored to
+             your unique needs and goals, under the guidance of our experienced fitness 
+             professionals.</p>
+            </article>
+
+<article>
+        <h4>TMJ Dysfunction</h4>
+        <p>Address temporomandibular joint issues effectively through specialized therapies,
+             relieving discomfort and restoring proper function for improved jaw health.</p>
+</article>
+
+<article>
+        <h4>Myofascial Release and Craniosacral Therapy</h4>
+        <p>Experience gentle yet effective techniques targeting fascial and craniosacral 
+            restrictions, promoting relaxation, and facilitating the body's natural 
+            healing processes.</p>
+        </article>
+
+    <article>
+        <h4>Sports Therapy</h4>
+        <p>Optimize athletic performance and prevent injuries with our sports therapy 
+            services, combining advanced techniques to enhance strength, flexibility, 
+            and overall athletic well-being.</p>
+    </article>
+       </section>
+
+       
+
+       <section class="calltoaction">
+        <h3>make an appointment</h3>
+        <form action="submit_form.php" method="post">
+          <div class="form-box">
+            <!-- Contact Name -->
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="contactName" required />
+  
+            <br />
+  
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+  
+            <br />
+          </div>
+          <div class="form-box">
+            <!-- Phone Number -->
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required />
+  
+            <br />
+  
+            <!-- Desired Appointment Date -->
+            <label for="appointmentDate">Desired Appointment Date</label>
+            <input
+              type="date"
+              id="appointmentDate"
+              name="appointmentDate"
+              required
+            />
+          
+          <br /><br />
+  </div>
+  <footer>
+    <p>
+      “This is a fictional website that was designed and coded as an
+      educational exercise. It is not intended to be seen outside of the class
+      environment. None of the content and images were approved by the
+      business owner.”
+    </p>
+  </footer>
     </body>
 </html>
