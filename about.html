@@ -176,8 +176,61 @@
     </section>
 
     <section class="blog"></section>
-    <section class="location"></section>
-    <section class="calltoaction"></section>
-    <footer></footer>
+
+    <section class="aboutlocation">
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.0241335955225!2d-124.92749082370638!3d49.672684071454086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881315b1258325%3A0xf21aee3501fe1122!2sAscent%20Physiotherapy!5e0!3m2!1sen!2sca!4v1700680345351!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    
+    <section class="calltoaction">
+      <h3>make an appointment</h3>
+      <form action="submit_form.php" method="post">
+        <div class="form-box">
+          <!-- Contact Name -->
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="contactName" required />
+
+          <br />
+
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <br />
+        </div>
+        <div class="form-box">
+          <!-- Phone Number -->
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+          <br />
+
+          <!-- Desired Appointment Date -->
+          <label for="appointmentDate">Desired Appointment Date</label>
+          <input
+            type="date"
+            id="appointmentDate"
+            name="appointmentDate"
+            required
+          />
+        <br /><br />
+</div></form></section>
+    <footer>
+      <p>
+        “This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.”
+      </p>
+    </footer>
   </body>
 </html>

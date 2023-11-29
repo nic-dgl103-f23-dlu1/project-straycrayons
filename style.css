@@ -274,6 +274,12 @@
     color: #fbfbfb;
 }
 
+    /* Hide the middle column on mobile screens */
+    .tableprices td:nth-child(2),
+    .tableprices th:nth-child(2) {
+        display: none;
+    }
+
   /*about us page*/
   .teammember {
     border: 1px solid #ddd;
@@ -757,5 +763,25 @@
   h4 {
     margin-top: 10px;
   }
-  /* ###########END of Desktop Only########### */
+/*google map styling for desktop*/
+
+.aboutlocation {
+    height: auto;
+    background-color: #fbf9f5;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.aboutlocation .google-map {
+    max-width: 800px; /* maximum width ofmap container */
+    margin: 0 auto; /* Center map container*/
+}
+
+.aboutlocation iframe {
+    width: 100%; /* map responsive*/
+    border-radius: 10px; 
+    border: 5px solid #ddd;
+}
+ /* ###########END of Desktop Only########### */
 }
