@@ -507,7 +507,7 @@
     }
   }
 
-  /* services PAGE*/
+  /* services PAGE*****************************************************************************************/
 
   /* Services section */
   .servicepage {
@@ -519,6 +519,10 @@
     color: #25283d;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     text-align: center;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    height: 700px;
   }
 
   #servicecontainer {
@@ -638,6 +642,10 @@
     padding: 40px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    height: 700px;
 }
 
 .tableprices h2 {
@@ -679,6 +687,7 @@
     padding: 40px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     text-align: center;
+    clear: both;
   }
 
   .contd h3 {
