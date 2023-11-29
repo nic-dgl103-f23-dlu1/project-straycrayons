@@ -519,7 +519,7 @@
     color: #25283d;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     text-align: center;
-    width: 50%;
+    width: 50%; /*make section display side by side with section betlow*/
     float: left;
     box-sizing: border-box;
     height: 700px;
@@ -642,7 +642,7 @@
     padding: 40px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
-    width: 50%;
+    width: 50%; /*make section display side by side*/
     float: right;
     box-sizing: border-box;
     height: 700px;
@@ -687,7 +687,7 @@
     padding: 40px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     text-align: center;
-    clear: both;
+    clear: both; /*make section clear above section*/
   }
 
   .contd h3 {
