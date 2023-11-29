@@ -1,502 +1,199 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 @font-face {
-    font-family: "LDO";
-    src: url('Fonts/oregon\ ldo.ttf');
-    src: url('Fonts/oregon\ ldo.ttf') format('embedded-opentype'),
-         url('Fonts/oregon\ ldo.ttf') format('woff2'),
-         url('Fonts/oregon\ ldo.ttf') format('woff'),
-         url('Fonts/oregon\ ldo.ttf') format('truetype');
+  font-family: "LDO";
+  src: url("Fonts/oregon\ ldo.ttf");
+  src: url("Fonts/oregon\ ldo.ttf") format("embedded-opentype"),
+    url("Fonts/oregon\ ldo.ttf") format("woff2"),
+    url("Fonts/oregon\ ldo.ttf") format("woff"),
+    url("Fonts/oregon\ ldo.ttf") format("truetype");
 }
 
 /* google map css */
 .google-map {
-    padding-bottom: 50%;
-    position: relative;
+  padding-bottom: 50%;
+  position: relative;
 }
 
 .google-map iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 /* ###########Mobile########### */
 @media screen and (max-width: 1199px) {
+  /* Reset some default styles*/
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Reset some default styles*/
-    body, h1, h2, h3, p, ul {
-        margin: 0;
-        padding: 0;
-    }
+  /* Apply a background color and some basic styling to the body */
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #25283d;
+    color: #fff6df;
+    line-height: 1.6;
+  }
 
-    /* Apply a background color and some basic styling to the body */
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #25283D;
-        color: #fff6df;
-        line-height: 1.6;
-    }
-
-    /* Header section (navigation bar) */
-    .header {
-        background-color: #25283D;
-        color: #fbf9f5;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .menu {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu li {
-        margin-right: 20px;
-    }
-
-    .menu img {
-        height: 100px;
-    }
-
-    /* Mobile menu */
-    .menu-icon {
-        display: none;
-
-    }
-
-    .menu a {
-        color: #fbf9f5;
-        text-transform: capitalize;
-        text-decoration: none;
-    }
-
-    /* Hero section */
-    .hero img {
-        width: 100%;
-        height: auto;
-        display: block;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* boxes found on https://copy-paste-css.com/ */ 
-    }
-
-    /* About section */
-    .about {
-        padding: 40px;
-        text-align: center;
-    }
-
-    .about h2 {
-        font-family: "LDO"; /* imported custom font to match the current logo*/
-        font-size: 36px;
-    }
-
-    /* Services section */
-    .services {
-        background-color: #fbf9f5;
-        padding: 40px;
-        text-align: center;
-        color: #25283D;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  /* boxes found on https://copy-paste-css.com/ */
-    }
-
-    .services img {
-        display: none;
-    }
-
-    .services h3 {
-        color: #25283D;
-        font-family: "LDO";
-    }
-
-    .services ul {
-        list-style-type: none;
-        color: #25283D;
-        text-transform: capitalize;
-    }
-
-    .services a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #25283D;
-        font-weight: bold;
-    }
-
-    #serviceslink {
-        font-family: "LDO";
-        display: inline-block;
-        outline: 0;
-        cursor: pointer;
-        border: none;
-        padding: 0 56px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 7px;
-        font-weight: 400;
-        font-size: 16px;
-        background: #25283D;
-        color: #fbf9f5;
-        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-        :hover {
-            background: rgba(255,255,255,0.9);
-            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
-        }
-    } /* button found on https://copy-paste-css.com/ altered color and font family*/
-
-    /* call to action section */
-    .calltoaction {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        background-color: #25283D;
-        color: #fbf9f5;
-        padding: 40px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        text-align: center;
-        text-transform: capitalize;
-    }
-
-    .calltoaction h3 {
-        color: #fbf9f5;
-        font-family: "LDO";
-        font-size: 24px;
-        margin-bottom: 20px; 
-    }
-
-    .calltoaction form {
-        max-width: 400px;
-        width: 100%; 
-        margin: 0 auto;
-    }
-
-    .calltoaction label {
-        display: block; 
-        color: #fbf9f5;
-        font-family: "LDO";
-        margin-bottom: 8px; 
-    }
-
-    .calltoaction input {
-        width: 100%; 
-        padding: 10px; 
-        margin-bottom: 15px; 
-        box-sizing: border-box; 
-        border: 1px solid #fbf9f5; 
-        border-radius: 5px; 
-        background-color: transparent; 
-        color: #fbf9f5;
-    }
-
-    #submitform {
-        font-family: "LDO";
-        display: inline-block;
-        outline: 0;
-        cursor: pointer;
-        border: none;
-        padding: 15px 56px; 
-        height: auto;
-        border-radius: 7px;
-        font-weight: 400;
-        font-size: 16px;
-        background: #fff;
-        color: #25283D;
-        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-        :hover {
-            background: rgba(255,255,255,0.9);
-            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
-        }
-    }
-
-
-    /* services PAGE*/
-    .servicepage {
-        display: none;
-    }
-
-    /*  services description section universal*/
-
-.contd {
-    background-color: #fbf9f5;
-    color: #25283D; /* Dark blue text color */
-    padding: 40px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* Header section (navigation bar) */
+  .header {
+    background-color: #25283d;
+    color: #fbf9f5;
+    padding: 10px;
     text-align: center;
-}
+  }
 
-.contd img {
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .menu img {
+    height: 100px;
+  }
+
+  /* Mobile menu */
+  .menu-icon {
     display: none;
-}
+  }
 
-    /* ###########END of Mobile########### */
-}
+  .menu a {
+    color: #fbf9f5;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
 
+  /* Hero section */
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* boxes found on https://copy-paste-css.com/ */
+  }
 
+  /* About section */
+  .about {
+    padding: 40px;
+    text-align: center;
+  }
 
-/* ###########Desktop Only############################################################################################################################################################################################# */
+  .about h2 {
+    font-family: "LDO"; /* imported custom font to match the current logo*/
+    font-size: 36px;
+  }
 
+  /* Services section */
+  .services {
+    background-color: #fbf9f5;
+    padding: 40px;
+    text-align: center;
+    color: #25283d;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* boxes found on https://copy-paste-css.com/ */
+  }
 
+  .services img {
+    display: none;
+  }
 
-/* ###########Desktop Only########### */
-@media screen and (min-width: 1200px) {
+  .services h3 {
+    color: #25283d;
+    font-family: "LDO";
+  }
 
-    /* Global */
-    body, h1, h2, h3, p, ul {
-        margin: 0;
-        padding: 0;
+  .services ul {
+    list-style-type: none;
+    color: #25283d;
+    text-transform: capitalize;
+  }
+
+  .services a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #25283d;
+    font-weight: bold;
+  }
+
+  #serviceslink {
+    font-family: "LDO";
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #25283d;
+    color: #fbf9f5;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    :hover {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
     }
+  } /* button found on https://copy-paste-css.com/ altered color and font family*/
 
-    
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #25283D;
-        color: #fbf9f5;
-        line-height: 1.6;
-    }
-
-    /* Header section (navigation bar) */
-    .header {
-        background-color: #25283D;
-        color: #fbf9f5;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .menu {
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu li {
-        margin-right: 20px;
-    }
-
-    .menu img {
-        height: 100px;
-    }
-
-    .menu a {
-        color: #fbf9f5;
-        text-transform: capitalize;
-        text-decoration: none;
-    }
-
-    /* Hero section */
-    .hero img {
-        width: 100%;
-        height: auto;
-        display: block;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    }
-
-    /* About section */
-    .about {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 40px;
-        text-align: center;
-    }
-
-    .about h2 {
-        font-family: "LDO";
-        font-size: 32px;
-    }
-
-    /* Services section */
-    .services {
-        display: flex;
-        align-items: center;
-        background-color:#25283D ;
-        padding: 40px;
-        color: #fbf9f5;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        text-align: center;
-    }
-
-    #servicecontainer {
-        align-items: flex-end;
-        padding-left: 20%;
-    }
-
-    .services h3 {
-        color: #25283D;
-        font-family: "LDO";
-        margin-bottom: 15px;
-    }
-
-    .services ul {
-        list-style-type: none;
-        color: #25283D;
-        text-transform: capitalize;
-        padding-left: 0;
-        margin-bottom: 15px; 
-    }
-
-    .services li {
-        margin-bottom: 10px;
-    }
-
-    .services a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #25283D;
-        font-weight: bold;
-        display: block; 
-        padding: 15px 0;
-    }
-
-    .services img {
-        max-width: 40%;
-        margin-left: 20px; 
-        border-radius: 8px;
-    }
-
-    #serviceslink {
-        font-family: "LDO";
-        display: inline-block;
-        outline: 0;
-        cursor: pointer;
-        border: none;
-        padding: 15px 56px;
-        height: auto;
-        border-radius: 7px;
-        font-weight: 400;
-        font-size: 16px;
-        background: #25283D;
-        color: #fbf9f5;
-        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-        :hover {
-            background: rgba(255,255,255,0.9);
-            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
-        }
-    }
-
-    .calltoaction {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        background-color: #25283D;
-        color: #fbf9f5;
-        padding: 40px;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        text-align: center;
-        text-transform: capitalize;
-    }
-
-    .calltoaction h3 {
-        color: #fbf9f5;
-        font-family: "LDO";
-        font-size: 24px;
-        margin-bottom: 20px; 
-    }
-
-    .calltoaction form {
-        max-width: 400px;
-        width: 100%; 
-        margin: 0 auto;
-    }
-
-    .calltoaction label {
-        display: block; 
-        color: #fbf9f5;
-        font-family: "LDO";
-        margin-bottom: 8px; 
-    }
-
-    .calltoaction input {
-        width: 100%; 
-        padding: 10px; 
-        margin-bottom: 15px; 
-        box-sizing: border-box; 
-        border: 1px solid #fff6df; 
-        border-radius: 5px; 
-        background-color: white; 
-        color: #fff6df;
-    }
-
-    #submitform {
-        font-family: "LDO";
-        display: inline-block;
-        outline: 0;
-        cursor: pointer;
-        border: none;
-        padding: 15px 56px; 
-        height: auto;
-        border-radius: 7px;
-        font-weight: 400;
-        font-size: 16px;
-        background: #fff;
-        color: #25283D;
-        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-        transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-        :hover {
-            background: rgba(255,255,255,0.9);
-            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
-        }
-    }
-
-
-      /* services PAGE*/
-
-
- /* Services section */
- .servicepage {
+  /* call to action section */
+  .calltoaction {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fbf9f5;
+    background-color: #25283d;
+    color: #fbf9f5;
     padding: 40px;
-    color: #25283D;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     text-align: center;
-}
-
-#servicecontainer {
-    align-items: flex-end;
-    padding-left: 20%;
-}
-
-.servicepage h3 {
-    color: #25283D;
-    font-family: "LDO";
-    margin-bottom: 15px;
-}
-
-.servicepage ul {
-    list-style-type: none;
-    color: #25283D;
     text-transform: capitalize;
-    padding-left: 0;
-    margin-bottom: 15px; 
-}
+  }
 
-.servicepage li {
-    margin-bottom: 10px;
-}
+  .calltoaction h3 {
+    color: #fbf9f5;
+    font-family: "LDO";
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 
-.servicepage a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #25283D;
-    font-weight: bold;
-    display: block; 
-    padding: 15px 0;
-}
+  .calltoaction form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
 
-.servicepage img {
-    max-width: 40%;
-    margin-left: 20px; 
-    border-radius: 8px;
-}
+  .calltoaction label {
+    display: block;
+    color: #fbf9f5;
+    font-family: "LDO";
+    margin-bottom: 8px;
+  }
 
-#serviceslink {
+  .calltoaction input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fbf9f5;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fbf9f5;
+  }
+
+  #submitform {
     font-family: "LDO";
     display: inline-block;
     outline: 0;
@@ -507,103 +204,558 @@
     border-radius: 7px;
     font-weight: 400;
     font-size: 16px;
-    background: #25283D;
-    color: #fbf9f5;
+    background: #fff;
+    color: #25283d;
     box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     :hover {
-        background: rgba(255,255,255,0.9);
-        box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
     }
-}
+  }
 
-.servicepage h2 {
- 
+  /* services PAGE*/
+  .servicepage {
+    display: none;
+  }
+
+  /*  services description section universal*/
+
+  .contd {
+    background-color: #fbf9f5;
+    color: #25283d; /* Dark blue text color */
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+  }
+
+  .contd img {
+    display: none;
+  }
+
+  /* table styling */
+
+  .tableprices {
+    background-color: #fbf9f5;
     color: #25283D;
-    font-family: "LDO";
-    margin-bottom: 15px;
-}
-
-      .wordsalad {
-        margin: 50px auto;
-        padding: 20px;
-        background-color: #25283D;
-        box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
-    }
-
-    .word-list {
-        list-style: none;
-        padding: 10px;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .word-list li {
-        color: #fbf9f5;
-    }
-
-    .largerli {
-        font-size: 1.5rem;
-        padding: 5px;
-    }
-
-    #largestli {
-        font-size: 2.5rem;
-        padding: 5px;
-    }
-
-    .smallerli {
-        font-size: 0.8rem;
-        padding: 5px;
-    }
-
-    #uniqueli {
-        font-size: 1rem;
-        padding: 5px;
-    }    
-
-    #anotheruniqueli {
-        font-size: 2rem;
-        padding: 5px;
-    }
-
-
-    /*  services description section*/
-
-.contd {
-    background-color: #25283D;
-    color: #fbf9f5; 
     padding: 40px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     text-align: center;
 }
 
-.contd h3 {
+.tableprices h2 {
+    color: #25283D;
+    font-family: "LDO";
+    margin-bottom: 30px;
+}
+
+.tableprices table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tableprices th, .tableprices td {
+    border: 1px solid #25283D;
+    padding: 15px;
+}
+
+.tableprices th {
+    background-color: #25283D;
+    color: #fbf9f5;
+}
+
+.tableprices tbody tr:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+.tableprices tbody tr:hover {
+    background-color: #25283D;
+    color: #fbfbfb;
+}
+
+  /*about us page*/
+  .teammember {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    background-color: #fbf9f5;
+  }
+
+  .teammember img {
+    width: 20%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  .teammember h4 {
+    color: #25283d;
+  }
+
+  .teammember p {
+    color: #25283d;
+    padding-right: 30px;
+  }
+
+  .teammember {
+    width: 100%;
+  }
+  /* ###########END of Mobile########### */
+}
+
+/* ###########Desktop Only############################################################################################################################################################################################# */
+
+/* ###########Desktop Only########### */
+@media screen and (min-width: 1200px) {
+  /* Global */
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #25283d;
+    color: #fbf9f5;
+    line-height: 1.6;
+  }
+
+  /* Header section (navigation bar) */
+  .header {
+    background-color: #25283d;
+    color: #fbf9f5;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-right: 20px;
+  }
+
+  .menu img {
+    height: 100px;
+  }
+
+  .menu a {
+    color: #fbf9f5;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  /* Hero section */
+  .hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  /* About section */
+  .about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-family: "LDO";
+    font-size: 32px;
+  }
+
+  /* Services section */
+  .services {
+    display: flex;
+    align-items: center;
+    background-color: #25283d;
+    padding: 40px;
+    color: #fbf9f5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+  }
+
+  #servicecontainer {
+    align-items: flex-end;
+    padding-left: 20%;
+  }
+
+  .services h3 {
+    color: #25283d;
+    font-family: "LDO";
+    margin-bottom: 15px;
+  }
+
+  .services ul {
+    list-style-type: none;
+    color: #fbf9f5;
+    text-transform: capitalize;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .services li {
+    margin-bottom: 10px;
+  }
+
+  .services a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #25283d;
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+  }
+
+  .services img {
+    max-width: 40%;
+    margin-left: 20px;
+    border-radius: 8px;
+  }
+
+  #serviceslink {
+    font-family: "LDO";
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 15px 56px;
+    height: auto;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #fbfbfb;
+    color: #fbf9f5;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    :hover {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+    }
+  }
+
+  .calltoaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #25283d;
+    color: #fbf9f5;
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .calltoaction h3 {
+    color: #fbf9f5;
+    font-family: "LDO";
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .calltoaction form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .calltoaction label {
+    display: block;
+    color: #fbf9f5;
+    font-family: "LDO";
+    margin-bottom: 8px;
+  }
+
+  .calltoaction input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff6df;
+    border-radius: 5px;
+    background-color: white;
+    color: #fff6df;
+  }
+
+  #submitform {
+    font-family: "LDO";
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 15px 56px;
+    height: auto;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #fff;
+    color: #25283d;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    :hover {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+    }
+  }
+
+  /* services PAGE*/
+
+  /* Services section */
+  .servicepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbf9f5;
+    padding: 40px;
+    color: #25283d;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+  }
+
+  #servicecontainer {
+    align-items: flex-end;
+    padding-left: 20%;
+  }
+
+  .servicepage h3 {
+    color: #25283d;
+    font-family: "LDO";
+    margin-bottom: 15px;
+  }
+
+  .servicepage ul {
+    list-style-type: none;
+    color: #25283d;
+    text-transform: capitalize;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .servicepage li {
+    margin-bottom: 10px;
+  }
+
+  .servicepage a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #25283d;
+    font-weight: bold;
+    display: block;
+    padding: 15px 0;
+  }
+
+  .servicepage img {
+    max-width: 40%;
+    margin-left: 20px;
+    border-radius: 8px;
+  }
+
+  #serviceslink {
+    font-family: "LDO";
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 15px 56px;
+    height: auto;
+    border-radius: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    background: #25283d;
+    color: #fbf9f5;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    :hover {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+    }
+  }
+
+  .servicepage h2 {
+    color: #25283d;
+    font-family: "LDO";
+    margin-bottom: 15px;
+  }
+
+  .wordsalad {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #25283d;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+  }
+
+  .word-list {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .word-list li {
+    color: #fbf9f5;
+  }
+
+  .largerli {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
+
+  #largestli {
+    font-size: 2.5rem;
+    padding: 5px;
+  }
+
+  .smallerli {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+
+  #uniqueli {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  #anotheruniqueli {
+    font-size: 2rem;
+    padding: 5px;
+  }
+
+  /* table styling */
+
+  .tableprices {
+    background-color: #fbf9f5;
+    color: #25283D;
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    text-align: center;
+}
+
+.tableprices h2 {
+    color: #25283D;
+    font-family: "LDO";
+    margin-bottom: 30px;
+}
+
+.tableprices table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tableprices th, .tableprices td {
+    border: 1px solid #25283D;
+    padding: 15px;
+}
+
+.tableprices th {
+    background-color: #25283D;
+    color: #fbf9f5;
+}
+
+.tableprices tbody tr:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+.tableprices tbody tr:hover {
+    background-color: #25283D;
+    color: #fbfbfb;
+}
+
+  /*  services description section*/
+
+  .contd {
+    background-color: #25283d;
+    color: #fbf9f5;
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+  }
+
+  .contd h3 {
     font-family: "LDO";
     font-size: 1.5rem;
     margin-bottom: 50px;
-}
+  }
 
-.contd-article {
+  .contd-article {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: #fbf9f5; /* Off white background color */
-}
+  }
 
-.contd-article img {
+  .contd-article img {
     max-width: 20%;
     margin-right: 20px;
-}
+  }
 
-.contd-text {
+  .contd-text {
     color: #0d0d11;
     flex: 1;
     padding: 30px;
-}
+  }
 
-    /* ###########END of Desktop Only########### */
+  /*about page*/
+
+  .teammember {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+    background-color: #fbf9f5;
+  }
+
+  .teammember img {
+    width: 30%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  .teammember h4 {
+    font-family: "LDO";
+    font-size: 1.3rem;
+    color: #25283d;
+  }
+
+  .teammember p {
+    color: #25283d;
+  }
+
+  .aboutus h3 {
+    text-align: center;
+    font-family: "LDO";
+    font-size: 3rem;
+  }
+
+  .person-text p,
+  h4 {
+    margin-top: 10px;
+  }
+  /* ###########END of Desktop Only########### */
 }
