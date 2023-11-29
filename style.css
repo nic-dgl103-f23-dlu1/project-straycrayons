@@ -7,7 +7,24 @@
     url("Fonts/oregon\ ldo.ttf") format("woff"),
     url("Fonts/oregon\ ldo.ttf") format("truetype");
 }
-
+ /* Reset some default styles*/
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  } 
+  
+  /*background color and some basic styling to the body */
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #25283d;
+    color: #fff6df;
+    line-height: 1.6;
+  }
 /* google map css */
 .google-map {
   padding-bottom: 50%;
@@ -22,26 +39,11 @@
   position: absolute;
 }
 
-/* ###########Mobile########### */
+/* ###########Mobile#################################################################################################################################################### */
 @media screen and (max-width: 1199px) {
-  /* Reset some default styles*/
-  body,
-  h1,
-  h2,
-  h3,
-  p,
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+ 
 
-  /* Apply a background color and some basic styling to the body */
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #25283d;
-    color: #fff6df;
-    line-height: 1.6;
-  }
+ 
 
   /* Header section (navigation bar) */
   .header {
@@ -219,7 +221,7 @@
     display: none;
   }
 
-  /*  services description section universal*/
+  /*services description section universal*/
 
   .contd {
     background-color: #fbf9f5;
@@ -319,23 +321,6 @@
 
 /* ###########Desktop Only########### */
 @media screen and (min-width: 1200px) {
-  /* Global */
-  body,
-  h1,
-  h2,
-  h3,
-  p,
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #25283d;
-    color: #fbf9f5;
-    line-height: 1.6;
-  }
 
   /* Header section (navigation bar) */
   .header {
