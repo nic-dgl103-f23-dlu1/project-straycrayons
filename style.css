@@ -42,9 +42,6 @@
 
 /* ###########Mobile#################################################################################################################################################### */
 @media screen and (max-width: 1199px) {
- 
-
- 
 
   /* Header section (navigation bar) */
   .header {
@@ -153,7 +150,7 @@
   } /* button found on https://copy-paste-css.com/ altered color and font family*/
 
   /* call to action section */
-  .calltoaction {
+.calltoaction {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,27 +161,27 @@
     text-align: center;
     text-transform: capitalize;
   }
-
+  
   .calltoaction h3 {
     color: #fbf9f5;
     font-family: "LDO";
     font-size: 24px;
     margin-bottom: 20px;
   }
-
+  
   .calltoaction form {
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
   }
-
+  
   .calltoaction label {
     display: block;
     color: #fbf9f5;
     font-family: "LDO";
     margin-bottom: 8px;
   }
-
+  
   .calltoaction input {
     width: 100%;
     padding: 10px;
@@ -195,7 +192,7 @@
     background-color: transparent;
     color: #fbf9f5;
   }
-
+  
   #submitform {
     font-family: "LDO";
     display: inline-block;
@@ -211,11 +208,13 @@
     color: #25283d;
     box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-    :hover {
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
-    }
   }
+  
+  #submitform:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+  }
+  
 
   /* services PAGE*/
   .servicepage {
@@ -315,6 +314,14 @@
   .teammember {
     width: 100%;
   }
+
+
+/*blog section on about us page*/
+
+.blogbutton {
+  
+}
+
   /* ###########END of Mobile########### */
 }
 
