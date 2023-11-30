@@ -89,7 +89,7 @@ body {
     text-align: center;
   }
 
-  .about h2 {
+  .about h1 {
     font-family: "LDO"; /* imported custom font to match the current logo*/
     font-size: 36px;
   }
@@ -110,12 +110,14 @@ body {
   .services h3 {
     color: #25283d;
     font-family: "LDO";
+    font-size: 26px;
   }
 
   .services ul {
     list-style-type: none;
     color: #25283d;
     text-transform: capitalize;
+    margin-bottom: 10px;
   }
 
   .services a {
