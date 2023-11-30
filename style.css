@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
+
 @font-face {
   font-family: "LDO";
   src: url("Fonts/oregon\ ldo.ttf");
@@ -318,11 +318,42 @@
 
 /*blog section on about us page*/
 .blog {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.blog h1 {
+  font-family: "LDO";
+  font-size: 36px;
+}
+
+.blog h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blogarticle {
+  width: 100%;
 }
 
 .blogbutton {
-
+  margin: 10px;
+  text-decoration: none;
+  font-family: "LDO";
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 15px 56px;
+  height: auto;
+  border-radius: 7px;
+  font-weight: 200;
+  background: #fbf9f5;
+  color: #25283d;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
   /* ###########END of Mobile########### */
@@ -787,6 +818,22 @@
     width: 100%; /* map responsive*/
     border-radius: 10px; 
     border: 5px solid #ddd;
+}
+
+/*blog section on about us page*/
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.blogarticle {
+  width: 40%;
+}
+
+.blogbutton {
+
 }
  /* ###########END of Desktop Only########### */
 }
