@@ -18,12 +18,13 @@
     padding: 0;
   } 
   
-  /*background color and some basic styling to the body */
+  /*background color and some basic styling to the body making smooth scrolling on for scrolling to calltoaction */
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #25283d;
     color: #fff6df;
     line-height: 1.6;
+    scroll-behavior: smooth;
   }
 /* google map css */
 .google-map {
