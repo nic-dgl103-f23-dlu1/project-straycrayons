@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ascent Physiotherpay</title>
+    <meta
+      name="description"
+      content="Final project for DGL 103. Rework of Ascent Physiotherapy"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <!-- DGL 103 CVS1 - Kaitlyn Charleson - Final Project -->
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header class="header">
+      <!-- Logo -->
+
+      <!-- Menu -->
+      <nav class="nav">
+        <ul class="menu">
+          <li>
+            <img src="images/Ascent_Logo.png" alt="ascent physiotherapy logo" />
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#calltoactionanchor">Contact Us</a></li>
+          <li><p>250-339-1039</p></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="images/group.jpg" alt="Team members at Ascent Physiotherapy" />
+    </section>
+    <section class="about">
+      <h1>Ascent Physiotherapy</h1>
+      <p>
+        Ascent Physiotherapy is a full service physiotherapy clinic located in
+        Comox, BC.  We offer Physiotherapy, including Manual/Manipulative
+        Therapy, IMS, Acupuncture, Radial Shockwave Therapy and exercise
+        prescription including Personal Training to the residents of the Comox
+        Valley and surrounding area.
+      </p>
+    </section>
+    <section class="services">
+      <img src="images/servicehomeimg.jpg" alt="image of acupuncture" />
+      <div id="servicecontainer">
+        <h3>Services</h3>
+        <ul>
+          <li>physical therapy</li>
+          <li>Intramuscular Stimulation</li>
+          <li>Acupuncture</li>
+          <li>radial shockwave therapy</li>
+          <li>personal training</li>
+          <li>tmj dysfunction</li>
+          <li>myofacial release and craniosacral therapy</li>
+          <li>sports therapy</li>
+        </ul>
+        <a id="serviceslink" href="services.html">more about services</a>
+      </div>
+    </section>
+    <section class="calltoaction" id="calltoactionanchor">
+      <h3>make an appointment</h3>
+      <form action="submit_form.php" method="post">
+        <div class="form-box">
+          <!-- Contact Name -->
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" name="contactName" required />
+
+          <br />
+
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <br />
+        </div>
+        <div class="form-box">
+          <!-- Phone Number -->
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required />
+
+          <br />
+
+          <!-- Desired Appointment Date -->
+          <label for="appointmentDate">Desired Appointment Date</label>
+          <input
+            type="date"
+            id="appointmentDate"
+            name="appointmentDate"
+            required
+          />
+
+        <br /><br />
+</div>
+        <!-- Submit Button -->
+        <input
+          id="submitform"
+          type="submit"
+          value="We'll be in contact soon!"
+        />
+      </form>
+    </section>
+    <section class="location">
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.0241335955225!2d-124.92749082370638!3d49.672684071454086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881315b1258325%3A0xf21aee3501fe1122!2sAscent%20Physiotherapy!5e0!3m2!1sen!2sca!4v1700680345351!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <p>
+        “This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.”
+      </p>
+    </footer>
+  </body>
+</html>
